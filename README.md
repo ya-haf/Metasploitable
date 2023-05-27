@@ -1,7 +1,10 @@
 ## Задание 1
-<img src="https://github.com/ya-haf/Metasploitable2/blob/main/img/Metasploitable%20.png?raw=true">
-<img src="https://github.com/ya-haf/Metasploitable2/blob/main/img/Metasploitable%20%20(2).png">
+<img src="https://github.com/ya-haf/Metasploitable/blob/main/img/Metasploitable.png">
 
-https://www.exploit-db.com/exploits/45832  
-https://www.exploit-db.com/exploits/44246  
-https://www.exploit-db.com/exploits/49862
+https://vulners.com/cve/CVE-2010-4478
+https://vulners.com/seebug/SSV:60184
+https://vulners.com/seebug/SSV:60292
+
+## Задание 2
+При SYN сканировании не завершается "трёхкратное рукопожатие" , если хост отвечает пакетами с флагом SYN ACK, то порт открыт
+FIN сканирование нужно для обхода файерволов. Отправляется пакет с флагом FIN , если хост отвечает RST то порт считается закрытым , соединения без ответа считается открытым . Xmas сканирование посылает пакеты с флагами FIN PSH URG и так же ответ RST говорит о закрытом порте, отстутствие ответа о открытом.
